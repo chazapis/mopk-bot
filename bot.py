@@ -71,11 +71,12 @@ async def on_message(message):
         return
 
     logger.info(f'New message from {message.author}: {message.content}')
-    if message.content == 'open 1':
-        await message.channel.send('opening 1!')
+    content = str(message.content).lower().replace(' ', '')
+    if content == 'open1':
+        await message.channel.send('Opening door 1!')
         open_door(1)
-    elif message.content == 'open 2':
-        await message.channel.send('opening 2!')
+    elif content == 'open2':
+        await message.channel.send('Opening door 2!')
         open_door(2)
 
 client.run(TOKEN, log_handler=None) # Disable double logging

@@ -22,7 +22,7 @@ docker run -d \
   -e DISCORD_TOKEN=<the bot token> \
   -e DISCORD_GUILD=<the server name> \
   -e DISCORD_CHANNEL=<the channel name> \
-  chazapis/mopk-bot:20240414
+  chazapis/mopk-bot:20240428
 ```
 
 ## Developing
